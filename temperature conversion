@@ -1,0 +1,38 @@
+#program konversi suhu
+#operasi yang didahulukan di operational presedence
+#1. ()
+#2.exponen **
+#3. perkalian dan teman2nya
+#4. pertambahan dan pengurangan
+##
+
+print('\nKalkulator Konversi Temperatur\n')
+
+celcius = float(input('Masukan suhu dalam celcius :'))
+print('Suhu adalah',celcius,'celcius')
+
+#reamur
+reamur = (4/5) * celcius
+print('Suhu adalah',reamur,'reamur')
+
+#fahrenheit
+fahrenheit = ((9/5) * celcius + 32)
+print('Suhu adalah',fahrenheit,'fahrenheit')
+
+#kelvin
+kelvin = celcius + 273
+print('Suhu adalah',kelvin,'kelvin')
+
+#konversi fahrenheit ke kelvin
+#dikonversi dulu ke celcius baru ke kelvin
+fahrenheit = float(input('Suhu dalam fahrenheit:'))
+celcius = 5/9*(fahrenheit-32)
+kelvin = celcius + 273
+print('Suhu adalah',kelvin,'kelvin')
+
+#konversi kelvin ke fahrenheit
+#dikonversi dulu ke celcius baru ke fahrenheit
+kelvin = float(input('Suhu dalam kelvin:'))
+celcius = kelvin - 273
+fahrenheit = ((9/5)*celcius+32)
+print('Suhu adalah',kelvin,'fahrenheit')
